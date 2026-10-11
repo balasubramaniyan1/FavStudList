@@ -12,7 +12,7 @@ function App() {
 
     <StudentProvider>
       <div >
-        <nav className="bg-gray-200 p-4 gap-4 flex justify-center">
+        <nav className="bg-gray-200 p-4 gap-4 flex justify-center sticky top-0 z-999">
           <NavLink
             to='/'
             end
