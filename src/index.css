@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+*{
+    font-family: "Gabarito", sans-serif;
+}
+
+.nav-link {
+    color: blue;
+    display: inline-block;
+    transition: transform 100ms ease, color 100ms ease;
+}
+
+.nav-link:hover {
+    color: black;
+    transform: translateY(-2px);
+}
+
+.nav-link-active,
+.nav-link-active:hover {
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.student-card {
+    transition: transform 150ms ease, box-shadow 150ms ease;
+}
+
+.student-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgb(0 0 0 / 0.12);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .nav-link,
+    .student-card {
+        transition: none;
+    }
+
+    .nav-link:hover,
+    .student-card:hover {
+        transform: none;
+    }
+}
